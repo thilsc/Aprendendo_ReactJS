@@ -1,19 +1,19 @@
 import React from 'react';
-//import './style.css';
-
-function HelloStackBlitz() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-      {React.createElement('h1', null, 'Aprendendo REACT')}
-      {React.createElement('h5', null, 'Aprendendo REACT')}
-    </div>
-  );
-}
+import Header from './Header';
+import Button from './Button';
+import Footer from './Footer';
+import './style.css';
 
 function App() {
-  return HelloStackBlitz();
+  return (
+    <div>
+      <Header />
+      <h1>Hello StackBlitz!</h1>
+      {React.createElement('h5', null, 'Aprendendo REACT')}
+      <Button />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
